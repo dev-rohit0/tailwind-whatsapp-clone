@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-[url(/images/bg-image.png)] min-h-screen grid place-items-center bg-fixed">
+    <div class="w-[97.5vw] h-[95vh] bg-red-50 flex flex-row">
+        <div class="left bg-[#ffffff] h-full w-[30%]">
+            <div class="sticky flex flex-col">
+
+
+                <div class="upper-nav bg-[#F0F2F5] flex justify-between items-center px-4 py-[0.60rem] border-r border-slate-300">
+                    <div class="dp flex justify-center items-center w-[40px] h-[40px]">
+                        <img class="rounded-full" src="/images/dp.jpg" alt="profile">
+                    </div>
+                    <div class="tools flex justify-center items-center space-x-2">
+                        <div class="status w-[40px] h-[40px] grid place-items-center">
+                            <svg version="1.1" id="df9d3429-f0ef-48b5-b5eb-f9d27b2deba6" x="0" y="0" viewBox="0 0 24 24"
+                                width="24" height="24" class="">
+                                <path fill="#54656F"
+                                    d="M12.072 1.761a10.05 10.05 0 0 0-9.303 5.65.977.977 0 0 0 1.756.855 8.098 8.098 0 0 1 7.496-4.553.977.977 0 1 0 .051-1.952zM1.926 13.64a10.052 10.052 0 0 0 7.461 7.925.977.977 0 0 0 .471-1.895 8.097 8.097 0 0 1-6.012-6.386.977.977 0 0 0-1.92.356zm13.729 7.454a10.053 10.053 0 0 0 6.201-8.946.976.976 0 1 0-1.951-.081v.014a8.097 8.097 0 0 1-4.997 7.209.977.977 0 0 0 .727 1.813l.02-.009z">
+                                </path>
+                                <path fill="#009588" d="M19 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path>
+                            </svg>
+                        </div>
+                        <div class="new-chat w-[42.5px] h-[40px] grid place-items-center">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="#54656F"
+                                    d="M19.005 3.175H4.674C3.642 3.175 3 3.789 3 4.821V21.02l3.544-3.514h12.461c1.033 0 2.064-1.06 2.064-2.093V4.821c-.001-1.032-1.032-1.646-2.064-1.646zm-4.989 9.869H7.041V11.1h6.975v1.944zm3-4H7.041V7.1h9.975v1.944z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="menu w-[40px] h-[40px] grid place-items-center">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class="">
+                                <path fill="#54656F"
+                                    d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="lower-nav px-4 py-2 flex items-center">
+                    <div class="flex justify-between items-center w-full">
+
+                        <svg viewBox="0 0 24 24" width="24" height="24" class="absolute left-10">
+                            <path fill="#54656F"
+                                d="M15.009 13.805h-.636l-.22-.219a5.184 5.184 0 0 0 1.256-3.386 5.207 5.207 0 1 0-5.207 5.208 5.183 5.183 0 0 0 3.385-1.255l.221.22v.635l4.004 3.999 1.194-1.195-3.997-4.007zm-4.808 0a3.605 3.605 0 1 1 0-7.21 3.605 3.605 0 0 1 0 7.21z">
+                            </path>
+                        </svg>
+                        <input class="outline-none bg-[#F0F2F5] rounded-md pl-16 py-1 w-[26vw] mr-2"
+                            placeholder="Search or start new chat" type="text" id="search">
+                        <div class="w-[40px] h-[40px] lg:flex justify-center items-center hidden">
+
+                                <svg viewBox="0 0 24 24" width="20" height="20" preserveAspectRatio="xMidYMid meet"
+                                class="relative">
+                                <path fill="#54656F" d="M10 18.1h4v-2h-4v2zm-7-12v2h18v-2H3zm3 7h12v-2H6v2z"></path>
+                            </svg>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <hr class="h-[0.01px] bg-slate-100">
+
+                <div class="h-[79.5vh] overflow-y-scroll">
+                    <div class="chatbox hover:bg-gray-100 cursor-pointer">
+                        <hr class="w-[85%] float-right">
+                        <div class="flex items-center w-full">
+                            <div class="p-3">
+                                <img src="/images/Aditya.jpg" alt="" class="rounded-full w-[49px] h-[49px]">
+                            </div>
+                            <div class="flex justify-between w-[80%] ">
+
+                                <div class="chat-name flex flex-col">
+                                    <h3 class="text-md text-gray-700 font-sans font-normal">Aditya Bamniya</h3>
+                                    <p class="text-md text-gray-500 font-sans font-normal flex items-center">
+                                        <svg viewBox="0 0 18 18" width="18" height="18" class=""><path fill="#7BCCEE" d="m17.394 5.035-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-.427-.388a.381.381 0 0 0-.578.038l-.451.576a.497.497 0 0 0 .043.645l1.575 1.51a.38.38 0 0 0 .577-.039l7.483-9.602a.436.436 0 0 0-.076-.609zm-4.892 0-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-2.614-2.556a.435.435 0 0 0-.614.007l-.505.516a.435.435 0 0 0 .007.614l3.887 3.8a.38.38 0 0 0 .577-.039l7.483-9.602a.435.435 0 0 0-.075-.609z"></path></svg>
+                                        <span class="inline-block">Aaja Chai peene Chale...</span>
+                                    </p>
+                                </div>
+                                <div class="last-chat">
+                                    <p class="text-[0.80rem] font-sans text-gray-500 font-light">yesterday</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="w-[85%] float-right">
+                    </div>
+                    <div class="chatbox hover:bg-gray-100 cursor-pointer">
+                        <hr class="w-[85%] float-right">
+                        <div class="flex items-center w-full">
+                            <div class="p-3">
+                                <img src="/images/Ravindra.jpg" alt="" class="rounded-full w-[49px] h-[49px]">
+                            </div>
+                            <div class="flex justify-between w-[80%] ">
+
+                                <div class="chat-name flex flex-col">
+                                    <h3 class="text-md text-gray-700 font-sans font-normal">Ravindra</h3>
+                                    <p class="text-md text-gray-500 font-sans font-normal flex items-center">
+                                        <svg viewBox="0 0 18 18" width="18" height="18" class=""><path fill="#7BCCEE" d="m17.394 5.035-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-.427-.388a.381.381 0 0 0-.578.038l-.451.576a.497.497 0 0 0 .043.645l1.575 1.51a.38.38 0 0 0 .577-.039l7.483-9.602a.436.436 0 0 0-.076-.609zm-4.892 0-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-2.614-2.556a.435.435 0 0 0-.614.007l-.505.516a.435.435 0 0 0 .007.614l3.887 3.8a.38.38 0 0 0 .577-.039l7.483-9.602a.435.435 0 0 0-.075-.609z"></path></svg>
+                                        <span class="inline-block">Bhai kidhar hai tu?</span>
+                                    </p>
+                                </div>
+                                <div class="last-chat">
+                                    <p class="text-[0.80rem] font-sans text-gray-500 font-light">yesterday</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="w-[85%] float-right">
+                    </div>
+                    <div class="chatbox hover:bg-gray-100 cursor-pointer">
+                        <hr class="w-[85%] float-right">
+                        <div class="flex items-center w-full">
+                            <div class="p-3">
+                                <img src="/images/Prashant.jpg" alt="" class="rounded-full w-[49px] h-[49px]">
+                            </div>
+                            <div class="flex justify-between w-[80%] ">
+
+                                <div class="chat-name flex flex-col">
+                                    <h3 class="text-md text-gray-700 font-sans font-normal">Prashant Bhai</h3>
+                                    <p class="text-md text-gray-500 font-sans font-normal flex items-center">
+                                        <svg viewBox="0 0 18 18" width="18" height="18" class=""><path fill="#CBD0D4" d="m17.394 5.035-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-.427-.388a.381.381 0 0 0-.578.038l-.451.576a.497.497 0 0 0 .043.645l1.575 1.51a.38.38 0 0 0 .577-.039l7.483-9.602a.436.436 0 0 0-.076-.609zm-4.892 0-.57-.444a.434.434 0 0 0-.609.076l-6.39 8.198a.38.38 0 0 1-.577.039l-2.614-2.556a.435.435 0 0 0-.614.007l-.505.516a.435.435 0 0 0 .007.614l3.887 3.8a.38.38 0 0 0 .577-.039l7.483-9.602a.435.435 0 0 0-.075-.609z"></path></svg>
+                                        <span class="inline-block">Bas 2 min me aaya Bhai </span>
+                                    </p>
+                                </div>
+                                <div class="last-chat">
+                                    <p class="text-[0.80rem] font-sans text-gray-500 font-light">yesterday</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="w-[85%] float-right">
+                    </div>
+                    <div class="chatbox hover:bg-gray-100 cursor-pointer">
+                        <hr class="w-[85%] float-right">
+                        <div class="flex items-center w-full">
+                            <div class="p-3">
+                                <img src="/images/Chirag.jpg" alt="" class="rounded-full w-[49px] h-[49px]">
+                            </div>
+                            <div class="flex justify-between w-[80%] ">
+
+                                <div class="chat-name flex flex-col">
+                                    <h3 class="text-md text-gray-700 font-sans font-normal">Chirag Vyas ECE</h3>
+                                    <p class="text-md text-gray-500 font-sans font-normal flex items-center">
+                                        <span>Bhai assignment kar liya kya </span>
+                                    </p>
+                                </div>
+                                <div class="last-chat">
+                                    <p class="text-[0.80rem] font-sans text-gray-500 font-light">yesterday</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="w-[85%] float-right">
+                    </div>
+                    <div class="chatbox hover:bg-gray-100 cursor-pointer">
+                        <hr class="w-[85%] float-right">
+                        <div class="flex items-center w-full">
+                            <div class="p-3">
+                                <img src="/images/bg-image.png" alt="" class="rounded-full w-[49px] h-[49px]">
+                            </div>
+                            <div class="flex justify-between w-[80%] ">
+
+                                <div class="chat-name flex flex-col">
+                                    <h3 class="text-md text-gray-700 font-sans font-normal">Rohit Sharma</h3>
+                                    <p class="text-md text-gray-500 font-sans font-normal">Joginder: Isme hai saare</p>
+                                </div>
+                                <div class="last-chat">
+                                    <p class="text-[0.80rem] font-sans text-gray-500 font-light">yesterday</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="w-[85%] float-right">
+                    </div>
+                    <div class="chatbox hover:bg-gray-100 cursor-pointer">
+                        <hr class="w-[85%] float-right">
+                        <div class="flex items-center w-full">
+                            <div class="p-3">
+                                <img src="/images/bg-image.png" alt="" class="rounded-full w-[49px] h-[49px]">
+                            </div>
+                            <div class="flex justify-between w-[80%] ">
+
+                                <div class="chat-name flex flex-col">
+                                    <h3 class="text-md text-gray-700 font-sans font-normal">Rohit Sharma</h3>
+                                    <p class="text-md text-gray-500 font-sans font-normal">Joginder: Isme hai saare</p>
+                                </div>
+                                <div class="last-chat">
+                                    <p class="text-[0.80rem] font-sans text-gray-500 font-light">yesterday</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="w-[85%] float-right">
+                    </div>
+                    <div class="chatbox hover:bg-gray-100 cursor-pointer">
+                        <hr class="w-[85%] float-right">
+                        <div class="flex items-center w-full">
+                            <div class="p-3">
+                                <img src="/images/bg-image.png" alt="" class="rounded-full w-[49px] h-[49px]">
+                            </div>
+                            <div class="flex justify-between w-[80%] ">
+
+                                <div class="chat-name flex flex-col">
+                                    <h3 class="text-md text-gray-700 font-sans font-normal">Rohit Sharma</h3>
+                                    <p class="text-md text-gray-500 font-sans font-normal">Joginder: Isme hai saare</p>
+                                </div>
+                                <div class="last-chat">
+                                    <p class="text-[0.80rem] font-sans text-gray-500 font-light">yesterday</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="w-[85%] float-right">
+                    </div>
+                    <div class="chatbox hover:bg-gray-100 cursor-pointer">
+                        <hr class="w-[85%] float-right">
+                        <div class="flex items-center w-full">
+                            <div class="p-3">
+                                <img src="/images/bg-image.png" alt="" class="rounded-full w-[49px] h-[49px]">
+                            </div>
+                            <div class="flex justify-between w-[80%] ">
+
+                                <div class="chat-name flex flex-col">
+                                    <h3 class="text-md text-gray-700 font-sans font-normal">Rohit Sharma</h3>
+                                    <p class="text-md text-gray-500 font-sans font-normal">Joginder: Isme hai saare</p>
+                                </div>
+                                <div class="last-chat">
+                                    <p class="text-[0.80rem] font-sans text-gray-500 font-light">yesterday</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="w-[85%] float-right">
+                    </div>
+                    <div class="chatbox hover:bg-gray-100 cursor-pointer">
+                        <hr class="w-[85%] float-right">
+                        <div class="flex items-center w-full">
+                            <div class="p-3">
+                                <img src="/images/bg-image.png" alt="" class="rounded-full w-[49px] h-[49px]">
+                            </div>
+                            <div class="flex justify-between w-[80%] ">
+
+                                <div class="chat-name flex flex-col">
+                                    <h3 class="text-md text-gray-700 font-sans font-normal">Rohit Sharma</h3>
+                                    <p class="text-md text-gray-500 font-sans font-normal">Joginder: Isme hai saare</p>
+                                </div>
+                                <div class="last-chat">
+                                    <p class="text-[0.80rem] font-sans text-gray-500 font-light">yesterday</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <hr class="w-[85%] float-right">
+                    </div>
+                </div>
+                
+            </div>
+        </div> 
+        <div class="right bg-[#F0EBE4] h-full w-[70%]">
+            <div class="right-upper bg-[#F0F2F5] flex justify-between items-center px-4 py-[0.60rem]">
+                <div class="flex justify-between items-center w-full cursor-pointer">
+                    <div class="flex justify-between items-center space-x-4">
+                        <img src="/images/Ravindra.jpg" class="w-[40px] h-[40px] rounded-full " alt="">
+                        <div class="flex flex-col">
+                            <p class="text-slate-600 font-sans font-medium text-base">Ravindra</p>
+                            <p class="text-slate-400 font-sans font-medium text-[0.75rem]">Online</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="w-[40px] h-[40px] flex justify-center items-center ">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="#54656F" d="M15.9 14.3H15l-.3-.3c1-1.1 1.6-2.7 1.6-4.3 0-3.7-3-6.7-6.7-6.7S3 6 3 9.7s3 6.7 6.7 6.7c1.6 0 3.2-.6 4.3-1.6l.3.3v.8l5.1 5.1 1.5-1.5-5-5.2zm-6.2 0c-2.6 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6 4.6 2.1 4.6 4.6-2 4.6-4.6 4.6z"></path></svg>
+                        </div>
+                        <div class="w-[40px] h-[40px] flex justify-center items-center">
+                            <svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="#54656F" d="M12 7a2 2 0 1 0-.001-4.001A2 2 0 0 0 12 7zm0 2a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 9zm0 6a2 2 0 1 0-.001 3.999A2 2 0 0 0 12 15z"></path></svg>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+            </div>
+            <div class="right-bottom w-full top-full sticky flex justify-between items-center px-4 py-4 space-x-2 bg-[#F0F2F5]">
+                <div class="flex justify-between items-center">
+                    <div class="w-[40px] h-[40px] flex justify-center items-center cursor-pointer">
+
+                        <svg viewBox="0 0 24 24" width="24" height="24" class="ekdr8vow dhq51u3o"><path fill="currentColor" d="M9.153 11.603c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962zm-3.204 1.362c-.026-.307-.131 5.218 6.063 5.551 6.066-.25 6.066-5.551 6.066-5.551-6.078 1.416-12.129 0-12.129 0zm11.363 1.108s-.669 1.959-5.051 1.959c-3.505 0-5.388-1.164-5.607-1.959 0 0 5.912 1.055 10.658 0zM11.804 1.011C5.609 1.011.978 6.033.978 12.228s4.826 10.761 11.021 10.761S23.02 18.423 23.02 12.228c.001-6.195-5.021-11.217-11.216-11.217zM12 21.354c-5.273 0-9.381-3.886-9.381-9.159s3.942-9.548 9.215-9.548 9.548 4.275 9.548 9.548c-.001 5.272-4.109 9.159-9.382 9.159zm3.108-9.751c.795 0 1.439-.879 1.439-1.962s-.644-1.962-1.439-1.962-1.439.879-1.439 1.962.644 1.962 1.439 1.962z"></path></svg>
+                    </div>
+                    <div class="flex justify-center items-center w-[40px] h-[40px] cursor-pointer">
+
+                        <svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z"></path></svg>
+                    </div>
+                </div>
+                <input type="text" placeholder="Type a message" class="bg-white rounded-lg px-4 py-2 outline-none w-full" id="">
+                <div class="flex justify-center items-center w-[40px] h-[40px] cursor-pointer">
+                    <svg viewBox="0 0 24 24" width="24" height="24" class=""><path fill="currentColor" d="M11.999 14.942c2.001 0 3.531-1.53 3.531-3.531V4.35c0-2.001-1.53-3.531-3.531-3.531S8.469 2.35 8.469 4.35v7.061c0 2.001 1.53 3.531 3.53 3.531zm6.238-3.53c0 3.531-2.942 6.002-6.237 6.002s-6.237-2.471-6.237-6.002H3.761c0 4.001 3.178 7.297 7.061 7.885v3.884h2.354v-3.884c3.884-.588 7.061-3.884 7.061-7.885h-2z"></path></svg>
+                </div>
+            </div>
+            <div class="chat-section">
+                
+            </div>
+        </div>
+    </div>   
+</body>
+
+</html>
